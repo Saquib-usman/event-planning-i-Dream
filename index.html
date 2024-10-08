@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management</title>
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Add Bootstrap -->
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="nav-logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="iDreams Logo" class="logo-img"> <!-- Your logo image -->
+                  
+                </a>
+            </li>
+            <li><a href="index.html" class="logo">iDreams</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <div id="page">
+        <div id="image-container">
+            <div class="image-div">
+                <img src="images/main3.jpg" alt="Event Image 1">
+                <img src="images/main4.jpg" alt="Event Image 2">
+            </div>
+            <div class="image-div">
+                <img src="images/main1.jpg" alt="Event Image 7">
+                <img src="images/Main2.jpg" alt="Event Image 8">
+            </div>
+        </div>
+
+        <div class="circle-container" id="about-idreams">
+            <h1>Welcome to iDreams</h1>
+            <p>At iDreams, we specialize in creating unforgettable experiences through our top-notch event planning and execution services. Whether it's corporate events or personal celebrations, we bring creativity, innovation, and precision to every event we manage.</p>
+            <h2>Why Join iDreams?</h2>
+            <p>Choosing iDreams means partnering with a passionate team of professionals who are dedicated to making your vision a reality. Whether it's a wedding, product launch, or gala dinner, we go the extra mile to ensure your event is a resounding success. Join us to experience:</p>
+        </div>
+        <section class="image-slider">
+            <div class="slider">
+                <div class="slides">
+                    <!-- Add Your Images Here -->
+                    <div class="slide">
+                        <img src="images/main5.jpg" alt="Slider Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/main6.jpg" alt="Slider Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/main7.jpg" alt="Slider Image 3">
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2024 iDreams Events. All Rights Reserved.   <p>Developed by Saquib Usman</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" class="social-icon text-light mx-2" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" class="social-icon text-light mx-2" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" class="social-icon text-light mx-2" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="script.js"></script>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+    
+        function showSlide(index) {
+            const slideHeight = 100 / totalSlides; // Calculate height percentage for each slide
+            const offset = -index * slideHeight; // Calculate the offset for the slides
+            document.querySelector('.slides').style.transform = `translateY(${offset}%)`;
+        }
+    
+        // setInterval(() => {
+        //     currentIndex = (currentIndex + 1) % totalSlides; // Move to the next slide
+        //     showSlide(currentIndex);
+        // }, 3000); // Change slide every 3 seconds
+    </script>
+  
+
+</body>
+
+</html>

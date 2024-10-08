@@ -1,0 +1,162 @@
+/* contact.css */
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+
+nav {
+    background-color: #311a1a;
+    padding: 15px; 
+    display: flex;               /* Use flexbox for layout */
+    justify-content: flex-end;
+    /* Increased padding for more height */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;  /* Centering items vertically */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px; /* Increased padding for larger buttons */
+    font-size: 1.2em; /* Larger font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Change color on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Contact Section styling */
+.contact-section {
+    padding: 40px;
+    background-color: hwb(0 76% 7%);
+    background-image: url("images/contact\ 1.jpg"); /* Add your image URL here */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    background-attachment: fixed; 
+    padding-right: 30%;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: rgb(244, 239, 234);
+}
+
+.form-section {
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #d2cccc;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6e1313;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Address Section styling */
+.address-section {
+    margin-bottom: 40px;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+/* Contact Info styling */
+.contact-info {
+    margin-top: 20px; /* Space above the contact info section */
+    padding: 20px; /* Padding for the section */
+    background-color: #d2cccc; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-info h2 {
+    font-family: 'Arial', sans-serif; /* Attractive font */
+    font-size: 24px; /* Increased font size */
+    color: #333; /* Dark color for better visibility */
+    margin-bottom: 10px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+}
+
+.contact-info p {
+    font-family: 'Verdana', sans-serif; /* Clean and readable font */
+    font-size: 16px; /* Font size for readability */
+    color: #555; /* Slightly lighter color for text */
+    margin: 8px 0; /* Space between paragraphs */
+}
+
+.contact-info a {
+    color: #9c1d25; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer styles specific to the contact page */
+footer.contact-footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for the footer */
+    text-align: center; /* Center text in the footer */
+}
+
+/* Social media icon styles */
+footer.contact-footer .social-media {
+    margin-top: 10px; /* Space above social media icons */
+}
+
+footer.contact-footer .social-icon {
+    color: white; /* Ensure icons are white */
+    font-size: 24px; /* Adjust icon size */
+    margin: 0 10px; /* Space between icons */
+}
+
+footer.contact-footer .social-icon:hover {
+    color: #ddd; /* Change icon color on hover */
+}

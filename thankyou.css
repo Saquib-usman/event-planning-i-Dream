@@ -1,0 +1,71 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("images/about3.jpg"); /* Add your background image here */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: white; /* Text color for visibility */
+    text-align: center; /* Center the text */
+    height: 100vh; /* Set height to 100% of the viewport */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center items vertically */
+}
+
+/* Thank You Section Styles */
+.thank-you-section {
+    padding: 50px; /* Space around the section */
+    max-width: 600px; /* Limit width for better readability */
+    margin: auto; /* Center the section */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 36px; /* Size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 18px; /* Size for the paragraph text */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+/* Emphasized Paragraph Styles */
+.thank-you-section p {
+    font-size: 20px; /* Increased font size for emphasis */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+/* Strong Text Styles */
+.thank-you-section strong {
+    color: #171402; /* Highlight color for the emphasis text (gold) */
+    font-size: 22px; /* Slightly larger font size */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for footer */
+    padding: 20px 0; /* Padding for footer */
+    position: relative; /* Position for potential absolute children */
+    z-index: 1; /* Ensure footer is above other elements */
+}
+
+.social-media {
+    display: flex; /* Flexbox for social media icons */
+    justify-content: center; /* Center the icons */
+    margin-top: 10px; /* Space above the icons */
+}
+
+.social-icon {
+    color: white; /* Color for social icons */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Size of social icons */
+}
+
+.social-icon:hover {
+    color: #FFD700; /* Change color on hover */
+}

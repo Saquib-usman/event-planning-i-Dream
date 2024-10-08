@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    background-color: #311a1a; 
+    padding: 15px; 
+    display: flex; /* Use flexbox for layout */
+    align-items: center; 
+    top: 0; /* Align it at the top */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full width */
+    z-index: 10;
+}
+
+.nav-logo {
+    margin-right: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: centre; /* Centering items vertically */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px; /* Increased padding for larger buttons */
+    font-size: 1.2em; /* Larger font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Change color on hover */
+    color: #fff; /* White text on hover */
+}
+
+#page {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+    background-color: #e5e5e5;
+}
+
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+.image-div {
+    height: 60vw;
+    width: 90vw;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#about-idreams {
+    margin: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #b8b0b0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about-idreams h1 {
+    font-size: 4em;
+    color: hwb(0 7% 49%);
+    margin-bottom: 20px;
+}
+
+#about-idreams p {
+    font-size: 1.5em;
+    color: #212020;
+    line-height: 1.6;
+}
+
+#about-idreams h2 {
+    font-size: 2.5em;
+    color: #86200e;
+    margin-top: 30px;
+}
+
+#about-idreams ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #5a5151;
+}
+
+#about-idreams ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+
+footer {
+    background-color: #343a40; /* Dark background */
+    color: #f8f9fa; /* Light text */
+    padding: 1.5rem 0; /* Padding for the footer */
+}
+
+.social-media {
+    margin-top: 1rem; /* Space above the social icons */
+}
+
+.social-icon {
+    font-size: 24px; /* Size of the icons */
+    color: #ffffff; /* White color for the icons */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+.image-slider {
+    margin: 40px 0; /* Margin above and below the slider */
+    text-align: center; /* Center the slider */
+    position: relative; /* Positioning for the buttons */
+    height: 500%; /* Limit the width of the slider */
+    overflow: hidden; /* Hide overflow */
+}.image-slider .slider .slides .slide {
+    position: relative;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.image-slider .slider .slides .slide img {
+    width: 90%; /* Make sure the image fills the slide */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.image-slider .slider .slides .slide:hover img {
+    transform: scale(0.9); /* Scale up on hover */
+}
+
+
+.slider {
+    position: relative;
+    height: 100%;/* Hide overflow */
+}
+
+.slides {
+    display: flex;
+    flex-direction: column; /* Align slides vertically */
+    /* transition: transform 0.5s ease; */
+    height: 300%;/* Smooth transition between slides */
+}
+
+.slide {
+    flex: 1 0 100%; /* Each slide takes full height */
+    display: flex; /* Flexbox for centering image */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.slide img {
+    width: 80%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 80%; 
+    padding : 2px;
+    /* Ensure images fit within the slider */
+}
+
+
+/* Create an overlay effect for transparency */
+
+#page {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(229, 229, 229, 0.7); /* Transparent page background */
+}
+
+
